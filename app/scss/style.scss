@@ -41,21 +41,34 @@ form {
   justify-content: center;
 
   input {
-    height: 2.2rem;
-    font-family: inherit;
-    font-weight: inherit;
-    font-size: inherit;
-    border: none;
-    padding-left: 1rem;
+    &[type="email"] {
+      height: 2.2rem;
+      font-family: inherit;
+      font-weight: inherit;
+      font-size: inherit;
+      border: none;
+      padding-left: 1rem;
 
-    &:focus {
-      outline: none;
+      &:focus {
+        outline: none;
+      }
     }
-  }
 
-  button {
-    width: 110px;
-    border: 2px solid white;
+    &[type="submit"] {
+      font-family: inherit;
+      font-weight: inherit;
+      font-size: inherit;
+      border: none;
+      background-color: rgb(255, 103, 0);
+      color: white;
+      height: 2.2rem;
+      width: 110px;
+      border: 2px solid white;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
   }
 }
 
@@ -86,10 +99,9 @@ img {
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 8rem;
-  // margin: auto 0;
   background-color: white;
 
-  &-img {
+  .logo {
     display: flex;
     width: 100px;
   }

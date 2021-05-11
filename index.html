@@ -9,19 +9,20 @@
   </head>
 
   <body>
+    <a id="top"></a>
     <header id="header">
-      <div id="header-img">
-        <img src="assets/Xiaomi-Logo.png" alt="Xiaomi-Logo" />
+      <div class="logo">
+        <img id="header-img" src="assets/Xiaomi-Logo.png" alt="Xiaomi-Logo" />
       </div>
 
-      <div id="nav-bar">
-        <a href="#" class="nav-link">Home</a>
+      <nav id="nav-bar">
+        <a href="#top" class="nav-link">Home</a>
         <a href="#specs" class="nav-link">Specs</a>
         <a href="#features" class="nav-link">Features</a>
         <a href="#reviews" class="nav-link">Reviews</a>
         <a href="#pricing" class="nav-link">Pricing</a>
         <button class="buy-now">Buy Now</button>
-      </div>
+      </nav>
 
       <div class="menu">
         <span></span>
@@ -228,9 +229,15 @@
         Just kidding you have to pay every month or very year to get all the
         benefits we mentioned everywhere. Everything comes at a cost.
       </p>
-      <form action="https://www.freecodecamp.com/email-submit" id="form">
-        <input type="email" placeholder="Enter email address here" required />
-        <button id="submit">Subscribe</button>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input
+          id="email"
+          name="email"
+          type="email"
+          placeholder="Enter email address here"
+          required
+        />
+        <input type="submit" value="Get Started" id="submit" />
       </form>
     </section>
 
